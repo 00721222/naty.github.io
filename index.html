@@ -1,0 +1,381 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cuidado Ambiental y Alimentación Sana</title>
+  <style>
+    :root {
+      --verde-pastel: #c8e6c9;
+      --verde-oscuro: #388e3c;
+      --texto: #212121;
+      --blanco: #ffffff;
+      --gris-claro: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--verde-pastel);
+      color: var(--texto);
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: var(--verde-oscuro);
+      color: var(--blanco);
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      height: 120px; /* aumentado de 80px */
+      margin-bottom: 0.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      font-size: 2rem;
+    }
+
+    header h2 {
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: #a5d6a7;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--verde-oscuro);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      border: 2px solid transparent;
+    }
+
+    nav a:hover {
+      background-color: var(--verde-oscuro);
+      color: var(--blanco);
+      border-color: var(--blanco);
+    }
+
+    main {
+      max-width: 900px;
+      background-color: var(--blanco);
+      margin: 2rem auto;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      color: var(--verde-oscuro);
+      border-left: 5px solid #81c784;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    p, ul, ol {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table th, table td {
+      border: 1px solid var(--gris-claro);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #a5d6a7;
+      color: var(--verde-oscuro);
+      font-weight: 600;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    audio, video {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .botones-contacto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .botones-contacto button {
+      background-color: var(--verde-oscuro);
+      color: var(--blanco);
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .botones-contacto button:hover {
+      background-color: #2e7d32;
+    }
+
+    #feedback-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    #feedback-form label {
+      font-weight: 600;
+    }
+
+    #feedback-form input,
+    #feedback-form textarea {
+      padding: 0.6rem;
+      border: 1px solid var(--gris-claro);
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    #feedback-form button {
+      background-color: var(--verde-oscuro);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    #feedback-form button:hover {
+      background-color: #2e7d32;
+    }
+
+    footer {
+      background-color: var(--verde-oscuro);
+      color: var(--blanco);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .botones-contacto {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-7fbc-6230-a31e-424bb7635ca1/raw?se=2025-06-10T02%3A39%3A39Z&sp=r&sv=2024-08-04&sr=b&scid=f9e323fe-51f6-553b-b983-590011de0b06&skoid=789f404f-91a9-4b2f-932c-c44965c11d82&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-09T23%3A06%3A29Z&ske=2025-06-10T23%3A06%3A29Z&sks=b&skv=2024-08-04&sig=Xoj0Jo1p0ikx7lyZCeAntO3alfh1wocb19txTYr72oE%3D" alt="Logotipo del equipo" />
+    <h1>Cuidado Ambiental y Alimentación Sana</h1>
+    <h2>Plantel 20 del Valle</h2>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#consejos">Consejos Prácticos</a>
+    <a href="#impacto">Impacto Ambiental</a>
+    <a href="#habitos">Hábitos Sostenibles</a>
+    <a href="#imagenes">Galería</a>
+    <a href="#audio">Audio</a>
+    <a href="#video">Video</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>¿Por qué es importante cuidar el ambiente?</h2>
+      <p><strong>El cuidado del ambiente</strong> es esencial para la salud del planeta y las futuras generaciones. <em>La alimentación sana</em> también contribuye al bienestar del ser humano y a la sostenibilidad.</p>
+      <p>Adoptar hábitos responsables en nuestra vida diaria puede generar un impacto positivo en el entorno, ayudando a preservar los recursos naturales y mejorar nuestra calidad de vida.</p>
+      <ol>
+        <li>Reducir el consumo de plásticos, preferiblemente evitando los de un solo uso.</li>
+        <li>Consumir productos locales, orgánicos y de temporada para apoyar a los agricultores y reducir la huella de carbono.</li>
+        <li>Reciclar y reutilizar materiales para disminuir la generación de residuos.</li>
+      </ol>
+      <ul>
+        <li>Verduras frescas, cultivadas sin pesticidas.</li>
+        <li>Frutas de temporada, ricas en nutrientes y sabor.</li>
+        <li>Agua natural, fundamental para una buena hidratación.</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Alimento</th>
+            <th>Beneficio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Manzana</td>
+            <td>Rica en fibra, ayuda a la digestión y controla el colesterol.</td>
+          </tr>
+          <tr>
+            <td>Espinaca</td>
+            <td>Alta en hierro y antioxidantes, fortalece el sistema inmunológico.</td>
+          </tr>
+          <tr>
+            <td>Zanahoria</td>
+            <td>Buena fuente de vitamina A, beneficiosa para la vista.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="beneficios">
+      <h2>Beneficios del Cuidado Ambiental y Alimentación Sana</h2>
+      <ul>
+        <li>Mejora la salud y previene enfermedades crónicas como diabetes y obesidad.</li>
+        <li>Reduce la contaminación y protege la biodiversidad del planeta.</li>
+        <li>Conserva los recursos naturales para las futuras generaciones.</li>
+        <li>Fomenta comunidades más saludables, conscientes y responsables.</li>
+        <li>Promueve el bienestar mental y emocional a través de una mejor calidad de vida.</li>
+        <li>Impulsa la economía local mediante el consumo responsable.</li>
+      </ul>
+    </section>
+
+    <section id="consejos">
+      <h2>Consejos Prácticos</h2>
+      <ul>
+        <li>Prefiere alimentos frescos, orgánicos y de temporada para aprovechar sus nutrientes.</li>
+        <li>Evita plásticos de un solo uso, usa bolsas reutilizables y envases eco-amigables.</li>
+        <li>Planta árboles o cultiva un huerto en casa para contribuir al medio ambiente y tener alimentos frescos.</li>
+        <li>Consume más vegetales y reduce el consumo de productos procesados.</li>
+        <li>Ahorra agua y energía apagando dispositivos cuando no los uses y reparando fugas.</li>
+      </ul>
+    </section>
+
+    <section id="impacto">
+      <h2>Impacto Ambiental y Social</h2>
+      <p>La producción masiva de alimentos procesados y el uso excesivo de químicos contaminan el suelo, el agua y el aire, afectando la salud de todos los seres vivos.</p>
+      <p>Adoptar hábitos sostenibles reduce el impacto negativo, promueve la justicia social y protege los ecosistemas vulnerables.</p>
+    </section>
+
+    <section id="habitos">
+      <h2>Cómo Implementar Hábitos Sostenibles</h2>
+      <ol>
+        <li><strong>Educar a la comunidad:</strong> Difundir información y crear conciencia sobre la importancia del cuidado ambiental.</li>
+        <li><strong>Planificar compras:</strong> Comprar solo lo necesario para evitar desperdicios.</li>
+        <li><strong>Consumir responsablemente:</strong> Elegir productos que respeten el medio ambiente y la salud.</li>
+        <li><strong>Participar en actividades comunitarias:</strong> Apoyar proyectos de reciclaje, huertos urbanos o limpiezas locales.</li>
+      </ol>
+    </section>
+
+    <section id="imagenes">
+      <h2>Galería</h2>
+      <img src="https://i.pinimg.com/736x/94/9c/58/949c581c53bbb4f3279d090c67c6f8e3.jpg" width="200" height="200">
+      <img src="https://i.pinimg.com/736x/f5/57/2f/f5572fcb4d55f7a1fb0dc4fbb3977e24.jpg" width="200" height="200">
+      <img src="https://i.pinimg.com/736x/8f/4a/18/8f4a18fbe5f37ae7e45642db81097fa3.jpg" width="200" height="200">
+      <img src="https://i.pinimg.com/736x/a4/b3/fd/a4b3fd3bda36d9552e75c0dcf0be628c.jpg" width="200" height="200">
+      <img src="https://i.pinimg.com/736x/20/ff/d0/20ffd090084671973d330611f209b2cf.jpg" width="200" height="200">
+      <img src="https://i.pinimg.com/736x/b0/b2/9f/b0b29f23a09e96b4b618aa54e857c950.jpg" width="200" height="200">
+    </section>
+
+    <section id="audio">
+      <h2>Audio Informativo</h2>
+      <audio controls>
+        <source src="https://r4---sn-0opoxu-hxm67.googlevideo.com/videoplayback?expire=1749543877&ei=ZZdHaP3ONvKhvdIPj92ouQw&ip=176.6.130.122&id=o-AG-miykHpJWGdkajMDqhhv18G1856j6z_kvlgbTY8k7b&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AY1jyLPPrAPgNpRIX12IkCj1Q-cbP-8Wsk-_UWD8s_4bmhaA8LiGh8omfpv6kwimrOGajpvg3r7qHWkt&spc=l3OVKchweTPpO2G4BsiSbbznjBHP21tbeKBdLL_0ROFfYdefYp_Itn4&vprv=1&svpuc=1&mime=video%2Fmp4&ns=ALxjx-2zqUPDp8EIsUHtutsQ&rqh=1&cnr=14&ratebypass=yes&dur=210.140&lmt=1709748489172562&fexp=51331020&c=MWEB&sefc=1&txp=4538434&n=ZF7h4gapO8N3yw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgLYKyiOqCa9GwBnSryFEziKiAea_RhNCbeoSpvY53c4wCIQCdLDsZctz4E1nQSAXBSV8U0KI_i0CHVpt39liDRxK1sA%3D%3D&pot=MnT4rJrzrg61OPiQSz9sW2BOwW7-reLUWfLfllusC1nBlgocSJuLPMgj36Htf-Ihm8cZGtV_OmPIu-fW_wu478uuHeDwnqAJJS5_79CmV0_ioXZSp-YfwKFS5LZ0UCCbn5ENyvbxbyEFjEuEKRcFectTc961ew==&cms_redirect=yes&met=1749522282,&mh=1z&mip=2806:106e:23:bf49:358d:eb47:da17:a8b9&mm=31&mn=sn-0opoxu-hxm67&ms=au&mt=1749521338&mv=m&mvi=4&pl=52&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAIr0bcD5eqcsKoO62M-0KhwybWE_qYk-NJPfhVKx8EnZAiB4zK1nAI2INr9gXAZGqbK8lPVL7o9B61hxcVy5kXAZAg%3D%3D" type="audio/mp3" />
+        Tu navegador no soporta audio.
+      </audio>
+    </section>
+
+    <section id="video">
+      <h2>Video sobre Alimentación Sana</h2>
+      <video controls>
+        <source src="file:///C:/Users/Admin/Downloads/Alimentaci%C3%B3n%20saludable%20para%20ni%C3%B1os%20-%20Hidratos%20de%20carbono,%20grasas,%20prote%C3%ADnas,%20vitaminas....mp4" type="video/mp4" />
+        Tu navegador no soporta video.
+      </video>
+    </section>
+
+    <section id="contacto">
+      <h2>Más Información y Contacto</h2>
+      <div class="botones-contacto">
+        <button onclick="window.open('https://www.gob.mx/salud', '_blank')">Gobierno de México - Salud</button>
+        <button onclick="window.open('https://www.greenpeace.org/mexico/', '_blank')">Greenpeace México</button>
+        <button onclick="window.open('https://www.fao.org/home/es', '_blank')">FAO</button>
+        <button onclick="window.open('https://www.who.int/es', '_blank')">OMS</button>
+        <button onclick="window.open('https://educacionambiental.semarnat.gob.mx/', '_blank')">Educación Ambiental</button>
+      </div>
+    </section>
+
+    <section id="formulario-contacto" class="content-section">
+      <h2>Comparte tus Propuestas y Comentarios</h2>
+      <p>¡Tu opinión es muy importante para nosotros!</p>
+      <form id="feedback-form">
+        <label for="nombre">Nombre (opcional):</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="email">Email (opcional):</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="propuesta">Tu Propuesta/Comentario:</label>
+        <textarea id="propuesta" name="propuesta" rows="6" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Integrante 1: Sánchez Velázquez Natalia – 90%</p>
+    <p>Integrante 2: Solis Nishimura José Jaen – 10%</p>
+    <p>© 2025 Plantel 20 del Valle</p>
+  </footer>
+
+</body>
+</html>
